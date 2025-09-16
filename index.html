@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Drive - Retrowave Racer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="background-glow"></div>
+    <main id="game-wrapper">
+        <header class="hud">
+            <h1 class="logo">Neon Drive</h1>
+            <div class="stats">
+                <div class="stat"><span class="label">Score</span><span id="score">0</span></div>
+                <div class="stat"><span class="label">Best</span><span id="best-score">0</span></div>
+                <div class="stat"><span class="label">Speed</span><span id="speed">0</span></div>
+            </div>
+        </header>
+        <section class="canvas-container">
+            <canvas id="game-canvas" width="900" height="600" aria-label="Neon Drive game canvas"></canvas>
+            <div id="overlay" class="overlay">
+                <div class="overlay-content">
+                    <h2 id="overlay-title">Retrowave Rush</h2>
+                    <p id="overlay-message">Slide into the neon highway.<br />Press <span class="key">SPACE</span> to start.</p>
+                    <p class="overlay-hint">Move with <span class="key">←</span> <span class="key">→</span> or <span class="key">A</span> <span class="key">D</span> · Hold <span class="key">SHIFT</span> to drift faster</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="tagline">Synthwave skyline. Endless outrun.</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
